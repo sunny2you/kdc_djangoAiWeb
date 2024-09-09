@@ -19,7 +19,7 @@ class GuessNumbers(models.Model):
             random.shuffle(origin)
             guess=origin[:6]
             guess.sort()
-            self.lottos+=str(guess)+'`n'
+            self.lottos+=str(guess)+'₩n'
         self.update_date=timezone.now()
         self.save()
 

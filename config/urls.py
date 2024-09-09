@@ -22,4 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index), #views.py의 index()호출
     path('hello/',views.hello, name='hello_main'),
+    path('lotto/',views.index,name='index'),
+    path('lotto/new', views.post, name="new_lotto"),
 ]
